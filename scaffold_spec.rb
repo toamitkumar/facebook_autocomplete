@@ -51,6 +51,6 @@ Scaffoldhub::Specification.new do
     file 'jquery.fcbkcomplete.min.js'
   end
 
-  file 'stylesheets/autocomplete.css', :dest => 'public/stylesheets'
+  file 'stylesheets/fcbkcomplete.css', :dest => 'public/stylesheets'
   file 'images/close.gif', :dest => 'public/images'
 end
