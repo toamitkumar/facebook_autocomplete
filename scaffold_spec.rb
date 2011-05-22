@@ -49,6 +49,7 @@ Scaffoldhub::Specification.new do
   with_options :src => 'javascripts', :dest => 'public/javascripts' do
     file 'jquery-1.6.min.js'
     file 'jquery.fcbkcomplete.min.js'
+    file 'facebook_lib.js'
   end
 
   file 'stylesheets/fcbkcomplete.css', :dest => 'public/stylesheets'
