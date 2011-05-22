@@ -3,6 +3,6 @@ class <%= class_name %> < <%= parent_class_name.classify %>
   belongs_to :<%= attribute.name %>
 <% end -%>
   def auto_complete_info(field)
-    { "id" => id, "label" => send(field), "value" => send(field) }
+    { "caption" => send(field), "value" => send(field) }
   end
 end

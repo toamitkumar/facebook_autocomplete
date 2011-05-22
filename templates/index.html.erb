@@ -1,0 +1,12 @@
+<select id="select" name="select">
+	<option value="test1">sleep</option>
+	<option value="test3">sport</option>
+	<option value="test3">freestyle</option>
+	<option value="2">Терешкова Валентина</option>
+</select>
+
+<script type="text/javascript">
+	$(document).ready(function(){                
+		$("#select").fcbkcomplete({ json_url: ""<%%= <%= plural_table_name %>_path.json" });
+	});
+</script>

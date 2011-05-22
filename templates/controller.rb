@@ -3,7 +3,7 @@ class <%= controller_class_name %>Controller < ApplicationController
   # GET <%= route_url %>.xml
   # GET <%= route_url %>.json
   def index
-    query = params[:term]
+    query = params[:tag]
     if query.blank?
       @<%= plural_table_name %> = <%= orm_class.all(class_name) %>
     else
