@@ -10,7 +10,7 @@ Scaffoldhub::Specification.new do
     description 'Create Facebook style JQuery autocomplete on a selected text field.'
 
     # 4x3 aspect ratio screen shot
-    screenshot ''
+    screenshot 'facebook_autocomplete_screenshot.png'
 
     # Tag(s) to help scaffoldhub.org users find your scaffold
     tag 'jquery'
