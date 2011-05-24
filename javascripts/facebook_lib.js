@@ -11,4 +11,4 @@ $(document).ready(function() {
   	var opts = $.extend(defaults, options);
   	element.fcbkcomplete(opts);
 	};
-}
+})
