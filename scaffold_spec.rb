@@ -17,6 +17,7 @@ Scaffoldhub::Specification.new do
     tag 'autocomplete'
     tag 'facebook autocomplete'
 
+    parameter_example 'FIELD_NAME'
   end
 
   # Define a model template - this ERB file will be used to generate a new
@@ -53,5 +54,5 @@ Scaffoldhub::Specification.new do
   end
 
   file 'stylesheets/fcbkcomplete.css', :dest => 'public/stylesheets'
-  file 'images/close.gif', :dest => 'public/images'
+  file 'images/close.gif', :dest => 'public/stylesheets'
 end
