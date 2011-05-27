@@ -55,4 +55,12 @@ Scaffoldhub::Specification.new do
 
   file 'stylesheets/fcbkcomplete.css', :dest => 'public/stylesheets'
   file 'images/close.gif', :dest => 'public/stylesheets'
+
+  post_install_message <<MESSAGE
+Please run "rake db:migrate" to create your new PLURAL_NAME database table.
+Then create a few new NAME records in the console.
+Finally run your Rails server and open http://localhost:3000/PLURAL_NAME
+to see the index page. Now you can type in the first few letters of the
+SCAFFOLD_PARAMETER field, and you will see the matching records.
+MESSAGE
 end
